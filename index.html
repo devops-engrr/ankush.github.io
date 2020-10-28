@@ -1,0 +1,424 @@
+<!DOCTYPE HTML>
+<!--
+	Free for personal and commercial use under the CCA 3.0 license
+-->
+<html>
+	<head>title>Portfoli_ankush</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="progresscircle.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+		body {font-family: 'Roboto'; background-color:#fefefe; padding:2em;}
+		.circlechart {
+		 	float: left;
+			padding: 20px;
+		}
+	</style>
+		<script src="jquery-3.5.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="a"></script>
+		<noscript><link rel="stylesheet" href="assets/b.js" /></noscript>
+	</head>
+	<body class="is-preload">
+  
+<canvas class="background"></canvas>        
+<script src="assets/js/particles.min.js"></script>
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1><i class="fas fa-glasses"></i></h1>
+						<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+						<h2><script>
+							var TxtRotate = function(el, toRotate, period) {
+						this.toRotate = toRotate;
+						this.el = el;
+						this.loopNum = 0;
+						this.period = parseInt(period, 2) || 1000;
+						this.txt = '';
+						this.tick();
+						this.isDeleting = false;
+						};
+
+						TxtRotate.prototype.tick = function() {
+						var i = this.loopNum % this.toRotate.length;
+						var fullTxt = this.toRotate[i];
+
+						if (this.isDeleting) {
+							this.txt = fullTxt.substring(0, this.txt.length - 1);
+						} else {
+							this.txt = fullTxt.substring(0, this.txt.length + 1);
+						}
+
+						this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+						var that = this;
+						var delta = 170 - Math.random() * 100;
+
+						if (this.isDeleting) { delta /= 2; }
+
+						if (!this.isDeleting && this.txt === fullTxt) {
+							delta = this.period;
+							this.isDeleting = true;
+						} else if (this.isDeleting && this.txt === '') {
+							this.isDeleting = false;
+							this.loopNum++;
+							delta = 400;
+						}
+
+							setTimeout(function() {
+								that.tick();
+							}, delta);
+							};
+
+							window.onload = function() {
+							var elements = document.getElementsByClassName('txt-rotate');
+							for (var i=0; i<elements.length; i++) {
+								var toRotate = elements[i].getAttribute('data-rotate');
+								var period = elements[i].getAttribute('data-period');
+								if (toRotate) {
+								new TxtRotate(elements[i], JSON.parse(toRotate), period);
+								}
+							}
+							// INJECT CSS
+							var css = document.createElement("style");
+  							css.type = "text/css";
+  							css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  							document.body.appendChild(css);
+							
+                                Particles.init({selector: '.background',
+                                               maxParticles: 150,
+                                               color: '#ffffff',
+                                               connectParticles: true,
+                                               responsive: [
+    {
+      breakpoint: 
+768
+,
+      options: {
+        maxParticles: 
+150
+,
+ color: 
+'#ffffff'
+,
+
+        connectParticles: 
+true
+      }
+    }, {
+      breakpoint: 
+600
+,
+      options: {
+        maxParticles: 
+60
+,
+        connectParticles: 
+true
+      }
+    }, {
+      breakpoint: 
+320
+,
+      options: {
+        maxParticles: 
+35
+ 
+// disables particles.js
+      }
+    }
+  ]});
+                                
+                            };
+							</script>
+							<span
+							   class="txt-rotate"
+							   data-period="2000"
+							   data-rotate='[ "Hello there,", "Welcome to my portfolio.", "I am a CS engineer", " and a tech enthusiast." ]'></span>
+						  </h2>
+                        <p>I'm Ankush Singh, and my portfolio is a representation of all that I've learned and accomplished as a computer engineering student till date.</p>
+						<ul class="a">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						
+					</header>
+
+				
+                <nav id="nav">
+						
+						<ul class="icons">
+							
+							<li><a href="https://www.linkedin.com/in/ankushks/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/olofnoob" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="p">
+                                <style>
+                                    div.card{
+                                       
+                                      
+                                        color: black;
+                                        font-weight: 900;
+                                        
+                                    }
+							img.im {
+									  background-size: contain;
+                                background-repeat: no-repeat;
+                                border-radius: 50%;
+									  font-size: 18px;
+									margin-top: 20px;;
+									  height: 120px;
+									}	
+							
+							img.imgg{
+								border-radius: 50%;
+								width: 70px;
+							}
+							
+							
+						</style>
+								<div class="card" >
+						<img class="im" src="jpg/a.jpg"  style="width:120px>
+						<ul style="list-style-type: none; class="actions">
+						<li><p  class="fas fa-glasses" >  Ankush Kumar Singh </p></li>						
+						<li><p class="fas fa-birthday-cake">  10/12/1998 </p></li>
+						<li><p class="fas fa-laptop-code">  Computer Engineer </p></li>
+                        <li><p class="fas fa-chalkboard-teacher">  APS KIRKEE: CBSE-2014 | 88%</p></li>
+						<li><p class="fas fa-school">  NMEMS Jr Clg: HSC-2016 | 70%</p></li>
+						<li><p class="fas fa-graduation-cap">  DYPIEMR (SPPU) BE 2020 | 8.12 CGPA</p></li>
+						<li><p class="fas fa-home">  Pune </p></li>
+						</ul>
+                                
+							</article>
+                        <article class="post featured">
+                            <div  class="intro">
+                                <h2><a>My Skill Set</a></h2>
+						
+						
+						
+						
+								<div id="demo">
+                                    <style>
+                           
+							
+                            .grid-container {
+                            display: grid;
+                            grid-template-columns: repeat( auto-fit, minmax(33.33%, 1fr) );
+                                grid-template-rows: repeat( auto-fit, minmax(33.33%, 1fr) );
+                            background-color: white;
+                            align-items: center;
+                            justify-content: center;
+                            border: 0px solid white;  
+                            padding: 10px;
+                            
+                            }
+                            .grid-item {
+                              background-color: white;
+                              padding: 20px;
+                              text-align: center;
+                                 
+                              align-content: center;
+                            }
+                             
+                            }
+                            </style>
+                                   
+                                    <div class="grid-container">
+                                      <div class="grid-item"><div class="circlechart" data-percentage="65">Java</div></div>
+                                      <div class="grid-item"><div class="circlechart" data-percentage="45">Python</div></div>
+                                      <div class="grid-item"><div class="circlechart" data-percentage="60">Tableau</div></div>
+                                      <div class="grid-item"><div class="circlechart" data-percentage="80">MySql/SQL</div></div>
+                                      <div class="grid-item"><div class="circlechart" data-percentage="75">Html/CSS</div></div>
+                                      <div class="grid-item"><div class="circlechart" data-percentage="65">DSA</div></div>
+                                    </div>
+
+								</div>
+                                
+								<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+								<script src="progresscircle.js"></script>
+								<script>
+									$('.circlechart').circlechart(); // Initialization
+								</script>
+								<script type="text/javascript">
+							
+							  var _gaq = _gaq || [];
+							  _gaq.push(['_setAccount', 'UA-36251023-1']);
+							  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+							  _gaq.push(['_trackPageview']);
+							
+							  (function() {
+								var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+								ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+								var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+							  })();
+							
+							</script>
+						
+						</div>
+                            <div><h2 class="a">Softwares and IDEs Used</h2></div>
+						<style>
+                           
+							
+                            .grid-container {
+                            display: grid;
+                            grid-template-columns: repeat( auto-fit, minmax(33.33%, 1fr) );
+                                grid-template-rows: repeat( auto-fit, minmax(33.33%, 1fr) );
+                            background-color: white;
+                            align-items: center;
+                            justify-content: center;
+                            border: 0px solid white;  
+                            padding: 10px;
+                            
+                            }
+                            .grid-item {
+                              background-color: white;
+                              padding: 20px;
+                              text-align: center;
+                                 
+                              align-content: center;
+                            }
+                            
+                            </style>
+							
+                            <div class="grid-container">
+                          <div class="grid-item"><img class="imgg" src="jpg/sql.jpg"><h5>MySql</br>Workbench</h5></div>
+                                <div class="grid-item"><img class="imgg" src="jpg/git.jpg"><h5>GitHub</br>&#8203;</h5></div>
+                          <div class="grid-item"><img class="imgg" src="jpg/jPngN1fpHb.jpg"><h5>Android</br>Studio</h5></div>
+                                  
+                          <div class="grid-item"><img class="imgg" src="jpg/ae.jpg"><h5>Adobe</br>AE</h5></div>
+                                 <div class="grid-item"><img class="imgg" src="jpg/nb.jpg"><h5>NetBeans</br>&#8203;</h5></div>  
+                                <div class="grid-item"><img class="imgg" src="jpg/fbs.jpg"><h5>Google</br>Firebase</h5></div>
+                         
+                         
+                        </div>
+						<style>
+							h2.h{
+								text-align: center;
+								margin-top: 100px;
+								top: 0em;
+							}
+                            div.res{
+                               text-align: center;
+                            }
+						</style>
+						<h2 class="h"><i class="fas fa-project-diagram"></i>  Some of my projects:</h2>
+                        </article>
+
+						<!-- Posts -->
+							<section class="posts">
+								
+								<article>
+									<header>
+										
+										<h2><a href="https://play.google.com/store/apps/details?id=in.indekode.collegebuddy">CollegeBuddy</a></h2>
+									</header>
+									<a href="https://play.google.com/store/apps/details?id=in.indekode.collegebuddy" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<p>Developed an Android App for students as well as teachers. Student will get all the necessary information like his attendance, result, notices, time table, events at one place. Teachers can mark attendance, circulate notices-events, update time tables, provide result at their finger tip.</p>
+									<h5>Project Highlight :</h5>
+									<p>First Runner Up in Mini Project exhibition held in college in association with ACM.</p>
+								</article>
+								<article>
+									<header>
+										<h2><a >Home_Away</a></h2>
+									</header>
+									<a class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+									<p>Home_Away is an android application which helps the user to book their hostels from their own place. In this, project our idea was to implement an app with live update facility to book hostel without visiting them from their remote place without charging any brokerage amount.</p>
+									<h5>Project Highlight :</h5>
+									<p>We used Google Firebase for live auto update facility and user authentication and Android Studio for Application development...</p>
+								</article>
+								
+							</section>
+
+						<!-- Footer -->
+						<div class="res"><a href="resume.pdf" download="resume.pdf">
+							<button class="re">Want my resume ? Click here</button>
+						</a></div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form>
+							
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name : </label>
+										<input type="text" name="name" id="name" default="Enter Your Name" placeholder="Enter Your Name"/>
+									</div>
+									<div class="field">
+										<label for="email">Email : </label>
+										<input type="text" name="email" id="email" placeholder="Enter Your Email Id" />
+									</div>
+									<div class="field">
+										<label for="message">Message : </label>
+										<textarea name="message" id="message" rows="3" placeholder="Enter Your Query">
+                                        </textarea>
+                                        <br/>
+                                        <button onclick="toast()">Send Message</button>
+									</div>
+                                    
+									
+									
+								
+								</div>
+								
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address :</h3>
+								<p>Flat No - A 201,<br/>Manik Park Residency,<br/>Bopkhel,<br/>Pune - 411031 (MH)
+								</p>
+							</section>
+							<section>
+								<h3>Phone :</h3>
+								<p><a href="#">+91-7741881499</a></p>
+							</section>
+							<section>
+								<h3>Email :</h3>
+								<p><a href=" mailto:  ankushk026@gmail.com">ankushk026@gmail.com</a></p>
+							</section>
+							
+							<section>
+								<h3>Contact Me - </h3>
+								<ul class="icons alt">
+									<li><a href="https://twitter.com/ankush_4141" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/ankush4141/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://github.com/olofnoob" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/ankushks/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- ccccccccCopyright -->
+					<div id="copyright">
+						<ul><li>&copy; Ankush Singh</li><li>2020</li></ul>
+					</div>
+
+			
+
+		<!-- Scripts -->
+            <script>src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>
